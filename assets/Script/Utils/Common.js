@@ -18,25 +18,87 @@ var Common = cc.Class({
     getValuePlus: function(position, choice) {
         switch (choice) {
             case 1: // value_left
-
-
+                var value_left = Math.floor(Math.random() * 20) + 1;
+                var value_right = Math.floor(Math.random() * 10) + 1;
+                var result = value_left + value_right;
                 break;
             case 2: // value_right
+                var value_left = Math.floor(Math.random() * 20) + 1;
+                var value_right = Math.floor(Math.random() * 10) + 1;
+                var result = value_left + value_right;
                 break;
             case 3: // result
+                var value_left = Math.floor(Math.random() * 20) + 1;
+                var value_right = Math.floor(Math.random() * 10) + 1;
+                var result = value_left + value_right;
                 break;
             default:
                 break;
         }
     },
     getValueMinus: function(position, choice) {
+        switch (choice) {
+            case 1: // value_left
+                var value_left = Math.floor(Math.random() * 20) + 1;
+                var value_right = Math.floor(Math.random() * 10) + 1;
+                var result = value_left - value_right;
+                break;
+            case 2: // value_right
+                var value_left = Math.floor(Math.random() * 20) + 1;
+                var value_right = Math.floor(Math.random() * 10) + 1;
+                var result = value_left - value_right;
+                break;
+            case 3: // result
+                var value_left = Math.floor(Math.random() * 20) + 1;
+                var value_right = Math.floor(Math.random() * 10) + 1;
+                var result = value_left - value_right;
+                break;
+            default:
+                break;
+        }
 
     },
     getValueMultiply: function(position, choice) {
-
+        switch (choice) {
+            case 1: // value_left
+                var value_left = Math.floor(Math.random() * 10) + 1;
+                var value_right = Math.floor(Math.random() * 5) + 1;
+                var result = value_left * value_right;
+                break;
+            case 2: // value_right
+                var value_left = Math.floor(Math.random() * 10) + 1;
+                var value_right = Math.floor(Math.random() * 5) + 1;
+                var result = value_left * value_right;
+                break;
+            case 3: // result
+                var value_left = Math.floor(Math.random() * 10) + 1;
+                var value_right = Math.floor(Math.random() * 5) + 1;
+                var result = value_left * value_right;
+                break;
+            default:
+                break;
+        }
     },
     getValueDivide: function(position, choice) {
-
+        switch (choice) {
+            case 1: // value_left
+                var value_right = Math.floor(Math.random() * 5) + 1;
+                var result = this.getRandomInt(10);
+                var value_left = value_right * result;
+                break;
+            case 2: // value_right
+                var value_right = Math.floor(Math.random() * 5) + 1;
+                var result = this.getRandomInt(10);
+                var value_left = value_right * result;
+                break;
+            case 3: // result
+                var value_right = Math.floor(Math.random() * 5) + 1;
+                var result = this.getRandomInt(10);
+                var value_left = value_right * result;
+                break;
+            default:
+                break;
+        }
     },
     getNewResult: function(type) {
         var answer = {};
